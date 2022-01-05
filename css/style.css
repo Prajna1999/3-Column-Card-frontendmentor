@@ -1,0 +1,170 @@
+:root{
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* FONTS: 
+	font-family: 'Big Shoulders Display', cursive;
+	font-family: 'Lexend Deca', sans-serif;      */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lexend Deca', sans-serif;
+}
+h1{
+	font-family: 'Big Shoulders Display', cursive;
+	font-weight: 700;
+	color: var(--very-light-gray);
+	text-transform: uppercase;
+	padding-top:25px ;
+}
+p{
+	color: var(--transparent-white);
+	padding: 25px 0;
+	line-height: 1.7em;
+	word-spacing: 0.15em;
+	letter-spacing: 0.06em;
+}
+.container{
+	margin: 0 auto;
+	margin-top:20px ;
+	max-width:440px ;
+
+}
+.cartype{
+	padding: 25px;
+	margin: 0 20px;
+	background-color: red;
+}
+.cartype p,
+.cartype h1,
+.cartype img,
+.cartype button {
+	margin: 0 25px;
+}
+#sedans{
+	border-radius: 15px 15px 0 0;
+	background-color: var(--bright-orange);
+}
+#suvs{
+	background-color: var(--dark-cyan);
+}
+#luxury{
+	border-radius: 0 0 15px 15px;
+	background-color: var(--very-dark-cyan);
+}
+.cartype button{
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 16px 22px;
+	border: none;
+  	border-radius: 25px;
+  	font-weight: 545;
+  	border: 2px solid transparent;
+  	transition: all 0.2s ease ;
+}
+
+#sedans button {
+	color: var(--bright-orange);
+}
+	#sedans button:hover {
+	color: var(--very-light-gray);
+	background-color: var(--bright-orange);
+	border: 2px solid var(--very-light-gray);
+	cursor: pointer;
+
+}
+#suvs button {
+	color: var(--dark-cyan);
+}
+	#suvs button:hover {
+	color: var(--very-light-gray);
+	background-color: var(--dark-cyan);
+	border: 2px solid var(--very-light-gray);
+	cursor: pointer;
+	}
+#luxury button {
+	color: var(--very-dark-cyan);
+}
+	#luxury button:hover {
+	color: var(--very-light-gray);
+	background-color: var(--very-dark-cyan);
+	border: 2px solid var(--very-light-gray);
+	cursor: pointer;
+}
+
+@media (min-width:750px ){
+	.container{
+		display: flex;
+		max-width: 1000px;
+		margin-top: 15vh;
+	}
+	.cartype{
+		margin: 0;
+	}
+	#sedans{
+		border-radius: 15px 0 0 15px;
+	}
+	#luxury{
+		border-radius: 0 15px 15px 0;
+	}
+	#suvs{
+		position: relative;
+	}
+	#suvs button{
+		position: absolute;
+		bottom: 25px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
